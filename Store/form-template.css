@@ -1,0 +1,131 @@
+:root {
+	overflow-y:hidden;
+}
+
+/*START FORM*/
+.form-page-container {
+	margin:0;
+	height:100%;
+	background:url("../Graphics/wallpaper2.png") no-repeat fixed center;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.content-container {
+	margin:0 auto;
+	border-collapse:collapse;
+}
+
+.form-container {
+	width:500px;
+	height:500px;
+	border-collapse:collapse;
+	margin:50px auto;
+	position:relative;
+	top:50px;
+	text-align:left;
+}
+
+.product-image-container {
+	border-collapse:collapse;
+	margin:0 auto;
+	vertical-align:bottom;
+}
+	/*START SLIDES*/
+	.form-slideshow-container {
+		position:relative;
+		z-index:0;
+		border-collapse:collapse;
+	}
+
+	.form-slideshow-images-wrapper {
+		width:100%;
+		height:100%;
+		text-align:center;
+	}
+
+	.form-slideshow-images {
+		height:600px;
+		z-index:1;
+		position:relative;
+		bottom:20px;
+		transition:.5s;
+		margin:0 auto;
+	}
+	
+	.form-button-slider-wrapper {
+		width:200px;
+		height:50px;
+		background-color:rgba(120,120,120,.70);
+		position:absolute;
+		bottom:10px;
+		left:205px;
+		z-index:2;
+		border-collapse:collapse;
+	}
+	/*END SLIDES*/
+
+	/*START DROPDOWN*/
+	.custom-select {
+		width:300px;
+		position:relative;
+		font-family:Cormorant Garamond;
+		margin:0 auto;
+		-webkit-user-select:none;      
+		-moz-user-select:none;
+		-ms-user-select:none;
+		user-select:none;
+	}
+
+	.custom-select select {
+		display:none;
+	}
+
+	.select-selected {
+		background-color:rgba(99,99,99,.4);
+	}
+
+	.select-selected:after {
+		position:absolute;
+		content:"";
+		top:17px;
+		right:10px;
+		width:0;
+		height:0;
+		border:6px solid transparent;
+		border-color:#fff transparent transparent transparent;
+	}
+
+	.select-selected.select-arrow-active:after {
+		border-color:transparent transparent #fff transparent;
+		top:7px;
+	}
+
+	.select-items div,.select-selected {
+		color:#ffffff;
+		padding:8px 16px;
+		border:1px solid transparent;
+		border-color:transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		cursor:pointer;
+	}
+
+	.select-items {
+		position:absolute;
+		background-color:rgba(99,99,99,.4);
+		top:100%;
+		left:0;
+		right:0;
+		z-index:99;
+	}
+
+	.select-hide {
+		display:none;
+	}
+
+	.select-items div:hover, .same-as-selected {
+		background-color:rgba(0, 0, 0, 0.1);
+	}
+
+	/*END DROPDOWN*/
+
+/*END FORM*/

@@ -1,0 +1,114 @@
+/*START LOADING SCREEN*/
+.main-page-loading {
+	height:100%;
+	width:100%;
+	margin:0 auto;
+	vertical-align:middle;
+	position:fixed;
+	z-index:999;
+	background:#303030 url("../Graphics/Moonchild-Loading.svg") no-repeat center fixed;
+	animation:loading-fadeout 2s 1;
+	animation-fill-mode:forwards;
+}
+
+@keyframes loading-fadeout {
+	from {
+		opacity:1;
+		z-index:999;
+	}
+	to {
+		opacity:0;
+		z-index:-1;
+	}
+}
+/*END LOADING SCREEN*/
+
+
+/*START MERCH*/
+.merch-container {
+	margin:0 auto;
+	border-collapse:collapse;
+	padding:0px;
+	box-sizing:border-box;
+	border-radius:15px;
+	position: relative;
+	background-color: rgba(0,0,0,.45);
+	color:#E0E0E0;
+}
+
+.merch-pic-wrapper {
+	max-width:50%;
+	min-width:50%;
+	text-align:center;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	padding:0px;
+	vertical-align:middle;
+}
+
+.merch-pic {
+	width:375px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	margin:0px;
+}
+
+.merch-pic-album {
+	width:375px;
+	border-radius:10px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	margin-top:10px;
+}
+
+.merch-text-wrapper {
+	height:35px;
+	max-width:50%;
+	min-width:50%;
+	text-align:center;
+}
+
+.merch-text-title {
+	font-family:Cormorant Garamond;
+	font-size:20px;
+	margin-bottom:3px;
+	color:#D6D6D6;
+}
+
+.merch-text-price {
+	font-family:Cormorant Garamond;
+	font-size:18px;
+	color:#D6D6D6;
+	margin-top:3px;
+}
+
+.forwardback {
+	width:60px;
+	height:40px;
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.forwardback-left-arrow {
+	width:45px;
+	height:30px;
+	position:absolute;
+	bottom:15px;
+	right:100px;
+}
+
+.forwardback-right-arrow {
+	width:45px;
+	height:30px;
+	position:absolute;
+	bottom:15px;
+	left:100px;
+}
+/*END MERCH*/
